@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="SubitPaudyal_Lab4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SubitPaudyal_Lab4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <AcrylicBrush TintColor="#FFC73A6A"/>
+        </Grid.Background>
+        <TextBlock x:ConnectionId='2' x:Name="txtTitle" HorizontalAlignment="Left" Margin="566,68,0,0" TextWrapping="Wrap" Text="Volume &amp; Surface Area Calculator" VerticalAlignment="Top" Height="85" Width="348" FontSize="30" TextAlignment="Center" FontWeight="Bold"/>
+        <RadioButton x:ConnectionId='3' x:Name="radCuboid" Content="Cuboid" Margin="434,409,0,0" VerticalAlignment="Top" IsChecked="False" FontSize="18"                            />
+        <RadioButton x:ConnectionId='4' x:Name="radSphere" Content="Sphere" Margin="0,409,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" IsChecked="False" FontSize="18"                            />
+        <RadioButton x:ConnectionId='5' x:Name="radCylinder" Content="Cylinder" Margin="934,409,0,0" VerticalAlignment="Top" IsChecked="False" FontSize="18"                              />
+        <TextBox x:ConnectionId='6' x:Name="txtUserLength" HorizontalAlignment="Left" Margin="450,557,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="50" PlaceholderText="0" FontSize="18"/>
+        <TextBox x:ConnectionId='7' x:Name="txtUserWidth" HorizontalAlignment="Left" Margin="650,557,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="50" PlaceholderText="0" FontSize="18"/>
+        <TextBox x:ConnectionId='8' x:Name="txtUserHeight" HorizontalAlignment="Left" Margin="850,557,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="50" PlaceholderText="0" FontSize="18"/>
+        <TextBox x:ConnectionId='9' x:Name="txtUserRadius" HorizontalAlignment="Left" Margin="1050,557,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="50" PlaceholderText="0" FontSize="18"/>
+        <Image x:ConnectionId='10' x:Name="imgCuboid" HorizontalAlignment="Left" Height="136" Margin="357,274,0,0" VerticalAlignment="Top" Width="268" Source="/Assets/cu.PNG"/>
+        <Image x:ConnectionId='11' x:Name="imgSphere" HorizontalAlignment="Left" Height="166" Margin="666,243,0,0" VerticalAlignment="Top" Width="185" Source="/Assets/sp.PNG"/>
+        <Image x:ConnectionId='12' x:Name="imgCylinder" HorizontalAlignment="Left" Height="184" Margin="903,226,0,0" VerticalAlignment="Top" Width="163" Source="/Assets/cy.PNG"/>
+        <Button x:ConnectionId='13' x:Name="btnCalculateVolume" Content="Calculate Volume" Margin="425,643,0,0" VerticalAlignment="Top" Height="44" Width="250" Background="#33640000"                                 FontSize="22"/>
+        <Button x:ConnectionId='14' x:Name="btnCalculateSurface" Content="Calculate Surface Area" Margin="425,723,0,0" VerticalAlignment="Top" Height="44" Width="250" Background="#33640000"                                  FontSize="22"/>
+        <TextBlock x:ConnectionId='15' x:Name="txtResultVolume" HorizontalAlignment="Left" Margin="700,638,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="44" Width="450" FontSize="22"/>
+        <TextBlock x:ConnectionId='16' x:Name="txtResultSurface" HorizontalAlignment="Left" Margin="700,721,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="44" Width="450" FontSize="22"/>
+        <TextBlock x:ConnectionId='17' x:Name="txtLength" HorizontalAlignment="Left" Margin="350,557,0,0" TextWrapping="Wrap" Text="Length (l):" VerticalAlignment="Top" Height="34" Width="100" FontSize="18"/>
+        <TextBlock x:ConnectionId='18' x:Name="txtWidth" HorizontalAlignment="Left" Margin="550,557,0,0" TextWrapping="Wrap" Text="Width (w)" VerticalAlignment="Top" Height="34" Width="100" FontSize="18"/>
+        <TextBlock x:ConnectionId='19' x:Name="txtHeight" HorizontalAlignment="Left" Margin="750,557,0,0" TextWrapping="Wrap" Text="Height (h)" VerticalAlignment="Top" Height="34" Width="100" FontSize="18"/>
+        <TextBlock x:ConnectionId='20' x:Name="txtRadius" HorizontalAlignment="Left" Margin="950,557,0,0" TextWrapping="Wrap" Text="Radius (r)" VerticalAlignment="Top" Height="34" Width="100" FontSize="18"/>
+    </Grid>
+</Page>
+
